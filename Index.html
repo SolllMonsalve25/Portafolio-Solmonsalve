@@ -1,115 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-compatible" conten="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="mediaqueries.css"/>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
     <nav id="desktop-nav">
-        <div class="logo">Solanyi Monsalve</div>
+        <div class="logo">Sol Monsalve</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!--Menu hamburguesa-->
     <nav id="hamburguer-nav">
-        <div class="logo">Sol monsalve</div>
+        
         <div class="hamburguer-menu">
             <div class="hamburguer-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
     </nav>
+
+    <!--seccion del perfil-->
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./Smb.jpeg" alt="Sol Monsalve profile picture"/>
+        <div class="section_pic-container">
+            <img class="profile-img-2" src="./assets/profile-pic.png" alt="Sol Monsalve profile picture">
         </div>
-        <div class="section__text">
-            <p class="section__textr__p1">Hello, I'm</p>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
             <h1 class="title">Sol Monsalve</h1>
-            <p class="section__textr__p2">Frontend developer</p>
+            <p class="section_text_p2">Frontend Developer</p>
             <div class="btn-container">
                 <button
-                 class="btn btn-color-2"
-                 onclick="window.open('./assets/resume-example.pdf')"
+                class="btn btn-color-2"
+                onclick="window.open('/')"
                 >
-                 Download CV
+                 Downland CV
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                 Contact Info
+                <button class="btn btn-color-1" onclick="location.href='.#contact'">
+                 contact inf
                 </button>
             </div>
-            <div id="socials-container">
-                <img
-                 src="./images (1).png"
-                 alt="My LinkedIn profile"
-                 class="icon"
-                 onclick="location.href='https://co.linkedin.com/in/solll-monsalve-483514275"s
-                />
-                <img
-                src="./Github.png"
-                alt="My Github profile"
+            <div id="social-container">
+                <img 
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
                 class="icon"
-                onclick="location.href='https://github.com/SolllMonsalve25"
-                />
+                onclick="location.href='https://co.linkedin.com/in/solll-monsalve-483514275'"
+                >
+                <img 
+                src="./assets/github.png" 
+                alt="My GitHub profile"
+                class="icon"
+                onclick="location.href='https://github.com/SolllMonsalve25'"
+                >
             </div>
         </div>
     </section>
+
+    <!--About Me-->
     <section id="about">
-        <p class="section__textr__p1">Get To Know More</p>
+        <p class="section_text_p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
-        <div class="section_container">
-            <div class="section__pic-container">
-                <img
-                 src="./Smb 2.jpeg"
-                 alt="profile picture"
-                 class="about-pic"
-                />
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                src="./assets/about-pic.png" 
+                alt="Profile Picture"
+                class="about-pic"
+                >
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img
-                         src="./experience.png"
-                         alt="Experience icon"
-                         class="icon"
-                        />
-                        <h3>Education</h3> 
-                        <p>B.Sc. Bachelors<br />M.Sc. Master Degree</p>
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon"
+                        >
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                        >
+                        <h3>Education</h3>
+                        <p>SENA<br>Servicio nacional de aprendisaje</p>
                     </div>
                 </div>
-                <div class="about-containers">
+                <div class="text-container">
                     <p>
-                        I am a highly motivated and dedicated individual with an extensive background in the field of computer science, specifically in software development. My experience sp
+                        ¡Hola! Soy Solanyi Monsalve, un apasionado Tecnólogo en Análisis y Desarrollo de Software graduado del SENA. Mi compromiso con 
+                        la excelencia y mi habilidad para el análisis y desarrollo de software me han llevado a ofrecer soluciones innovadoras en el mundo 
+                        digital, Experiencia en el ciclo completo de desarrollo de software, desde la concepción de la idea hasta la implementación y 
+                        mantenimiento, tambien poseo Habilidad para analizar requisitos y diseñar soluciones eficientes y escalables, Competente en varios 
+                        lenguajes de programación, incluyendo JavaScript, css, python, SQL, PHP, estoy Capacitado demostrada para abordar desafíos técnicos y encontrar 
+                        soluciones efectivas.
+
+                        Creo en la constante búsqueda de la mejora y la adaptabilidad en un mundo tecnológico en constante evolución. Mi enfoque es ofrecer soluciones creativas 
+                        y eficientes que impulsen el éxito de mis clientes.
                     </p>
-                </div>
+             </div>
             </div>
         </div>
-        <img
-         src="./arrow.png"
-         alt="Arrow icon"
-         class="icon arrow"
-         onclick="location.href='./#experience'"
-        />
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        >
     </section>
+
+    <!--Experience-->
     <section id="experience">
-        <p class="section__textr__p1"> Explore My</p>
+        <p class="section_text_p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
@@ -117,68 +141,70 @@
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
-                             <img
-                            src="./check mark.png"
+                            <img 
+                            src="./assets/experience.png" 
                             alt="Experience icon"
                             class="icon"
-                        />
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Experience</p>
-                        </div>
+                            >
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experience</p>
+                            </div>
                         </article>
                         <article>
-                            <img
-                             src="./check mark.png"
-                             alt="Experience icon"
-                             class="icon"
-                            />
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
                             <div>
                                 <h3>CSS</h3>
                                 <p>Experienced</p>
-                            </div> 
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
                         </article>
                         <article>
                             <img
-                            src="./check mark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>SASS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                        </article>
-                        <article>
-                            <img
-                            src="./check mark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>JavaScript</h3>
-                            <p>Basic</p>
-                        </div>   
-                        </article>
-                        <article>
-                            <img src="./check mark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>TypeScript</h3>
-                            <p>Basic</p>
-                        </div>
-                        </article>
-                        <article>
-                            <img src="./check mark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>Material UI</h3>
-                            <p>Intermediate</p>
-                        </div>
+                              src="./assets/checkmark.png"
+                              alt="Experience icon"
+                              class="icon"
+                            />
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
                         </article>
                     </div>
                 </div>
@@ -186,180 +212,159 @@
                     <h2 class="experience-sub-title">Fronted Development</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./check mark.png"
+                            <img 
+                            src="./assets/checkmark.png" 
                             alt="Experience icon"
                             class="icon"
-                        />
-                        <div>
-                            <h3>PostgreSQL</h3>
-                            <p>Basic</p>
-                        </div>
+                            >
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
                         </article>
                         <article>
-                            <img
-                            src="./check mark.png"
-                            alt="Experience icon"
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="experience icon"
                             class="icon"
-                        />
-                        <div>
-                            <h3>Node JS</h3>
-                            <p>Intermediate</p>
-                        </div>
+                            >
+                            <div>
+                                <h3>NodeJS</h3>
+                                <p>Intermediate</p>
+                            </div>
                         </article>
                         <article>
-                            <img
-                            src="./check mark.png"
+                            <img 
+                            src="./assets/checkmark.png" 
                             alt="Experience icon"
                             class="icon"
-                        />
-                        <div>
-                            <h3>Express JS</h3>
-                            <p>Intermediate</p>
-                        </div>
+                            >
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
                         </article>
                         <article>
-                            <img
-                            src="./check mark.png"
+                            <img 
+                            src="./assets/checkmark.png" 
                             alt="Experience icon"
                             class="icon"
-                        />
-                        <div>
-                            <h3>Git</h3>
-                            <p>Intermediate</p>
-                        </div>
+                            >
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
-        <img
-        src="./arrow.png"
+        <img 
+        src="./assets/arrow.png" 
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-    />
+        >
     </section>
+
+    <!--projects-->
     <section id="projects">
-        <p class="section__textr__p1">Browse My Recent</p>
+        <p class="section_text_p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img
-                        src="./projects.png"
+                        <img 
+                        src="./assets/project-1.png" 
                         alt="Project 1"
                         class="project-img"
-                    />
-                    </div>
-                    <h2 class="experience-sub-title project title">Project One</h2>
-                    <div class="btn-container">
-                         <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="location.href='https://github.com/SolllMonsalve25'"
                         >
-                          Github
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/SolllMonsalve25/matematicas_Coveror.git'"
+                        >
+                        GitHub
                         </button>
                         <button
-                          class="btn btn-color-2 project-btn"
-                          onclick="location.href='https://github.com/SolllMonsalve25'"
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/SolllMonsalve25/Estructuras-de-control---JavaScript.git'"
                         >
-                         Live Demon
+                         Ejercicios JavaScript
                         </button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img
-                         src="./projects.png"
-                         alt="Project 2"
+                        <img 
+                         src="./assets/project-2.png" 
+                         alt="project 2"
                          class="project-img"
                         />
                     </div>
-                    <h2 class="experience-sub-title project-btn">Project Two</h2>
+                    <h2 class="experience-sub-title project-title">project 2</h2>
                     <div class="btn-container">
                         <button
                          class="btn btn-color-2 project-btn"
-                         onclick="location.href='https://github.com/SolllMonsalve25'"
+                         onclick="location.href='https://github.com/SolllMonsalve25/ADSO_2670687.git'"
                         >
-                         Github
-                        </button> 
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/SolllMonsalve25'"
-                        >
-                         Live Demo
+                            Proyecto SENA
                         </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img
-                        src="./project3.jpeg"
-                        alt="Project 3"
-                        class="project-img"
-                    />    
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
                         <button
-                         class="btn btn-color-2 project-btn"
-                         onclick="location.href='https://github.com/SolllMonsalve25'"
+                         class="btn btn-color-2"
+                         onclick="location.href='https://github.com/SolllMonsalve25/matematicas_torta.git'"
                         >
-                         Github
+                         Live demo
                         </button> 
-                        <button
-                            class="btn btn-color-2 project-btn" 
-                            onclick="location.href='https://github.com/SolllMonsalve25'"
-                        >
-                         Live Demo 
-                        </button>
                     </div>
-                </div>
+                </div>    
             </div>
         </div>
-        <img
-        src="./arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
+        <img 
+         src="./assets/arrow.png" 
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='./#contact'"
         />
     </section>
-    <section id="Contact">
-        <p class="section__textr__p1">Get in Touch</p>
+    <section id="contact">
+        <p class="section_text_p1">Get in touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img
-                 src="./Gmail.png"
-                 alt="Email icon"
-                 class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:solanyimonsalve25@gmail.com">solanyimonsalve25@gmail.com</a></p>    
+                <img 
+                src="./assets/email.png" 
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+                >
+                <p><a href="solanyimonsalve25@gmail.com">solanyimonsalve25@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img
-                 src="./linkedin.png"
-                 alt="LinkedIn icon"
-                 class="icon contact-icon"
-                />
-                <p><a href="https://co.linkedin.com/in/solll-monsalve-483514275">LinkedIn</a></p> 
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+                >
+                <p><a href="https://co.linkedin.com/in/solll-monsalve-483514275">LinkedIn</a></p>
             </div>
         </div>
     </section>
     <footer>
         <nav>
-            <div class="nav-Links-container">
+            <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about"></a>About</li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2023 Sol Monsalve Betancourth. All Rigths Reserved</p>
+        <p>Copyright &#169; 2023 Sol Monsalve. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
- </body>
+</body>
 </html>
